@@ -114,7 +114,7 @@ nats-server -p 5222 -cluster nats://localhost:5248 -routes nats://localhost:4248
 
 When running on the same host, we need to pick different ports for the client connections `-p`, and for the port used to accept other routes `-cluster`. Note that `-routes` points to the `-cluster` address of the seed server \(`localhost:4248`\).
 
-Here is the log produced. See how it connects and registers a route to the seed server \(`...GzM`\).
+Here is the log produced. See how it connects and registers a route to the seed server \(`...IOW`\).
 
 ```text
 [83330] 2020/02/12 16:05:09.661047 [INF] Starting nats-server version 2.1.4
